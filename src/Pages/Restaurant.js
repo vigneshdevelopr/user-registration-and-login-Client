@@ -8,6 +8,7 @@ function Restaurant() {
 const Allrestaurants = async()=>{
   try {
     const response = await fetch('https://user-registration-and-login.vercel.app/restaurant',{
+    // const response = await fetch('http://localhost:5000/restaurant',{
       method:"GET",
       body: JSON.stringify(),
       headers:{
@@ -32,9 +33,11 @@ Allrestaurants();
 
 
   return (
-    <div className=' px-5 bg-black text-white '>
+    <div >
       <Base>
-      <h2>Hey</h2>
+      <div className='text-white text-center '>
+Restaurants
+      </div>
       </Base>
     </div>
   )

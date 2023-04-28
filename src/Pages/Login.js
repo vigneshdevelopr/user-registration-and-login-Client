@@ -37,6 +37,7 @@ function Login() {
         password,
       };
       const response = await fetch("https://user-registration-and-login.vercel.app/login", {
+      // const response = await fetch("http://localhost:5000/login", {
         method: "POST",
         body: JSON.stringify(newData),
         headers: {
@@ -127,7 +128,7 @@ function Login() {
                 <label class="block text-gray-700 text-sm font-bold mb-2">
                   Password
                 </label>
-                <a href="#" class="text-xs text-gray-500">
+                <a href="/forgot" target="_blank" class="text-xs text-gray-500">
                   Forget Password?
                 </a>
               </div>

@@ -1,12 +1,11 @@
 import React from 'react'
 import ResponsiveNavBar from './ResponsiveNavbar'
 
-function Base({title,description,children}) {
+function Base({title,children}) {
   return (
     <div className='main-component'>
-<ResponsiveNavBar />
+<ResponsiveNavBar  />
 <main>
-    {description}
     {children}
 </main>
 </div>

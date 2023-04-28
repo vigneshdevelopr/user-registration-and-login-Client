@@ -42,6 +42,7 @@ function Signup() {
         confirmpassword,
       };
       const response = await fetch("https://user-registration-and-login.vercel.app/register", {
+      // const response = await fetch("http://localhost:5000/register",{
         method: "POST",
         body: JSON.stringify(newData),
         headers: {
